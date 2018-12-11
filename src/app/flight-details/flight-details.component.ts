@@ -10,9 +10,9 @@ import { Observable } from 'rxjs';
 })
 export class FlightDetailsComponent implements OnInit {
 
-  private url = 'https://api.sandbox.amadeus.com/v1.2/airports/autocomplete?apikey=giHT8ZJoBHdDajAZrA96upHafxfSmeiI&term=Ord';
-  private flightUrl = 'https://api.sandbox.amadeus.com/v1.2/flights/low-fare-search?apikey=giHT8ZJoBHdDajAZrA96upHafxfSmeiI&origin=';
-  private autocompleteUrl = 'https://api.sandbox.amadeus.com/v1.2/airports/autocomplete?apikey=giHT8ZJoBHdDajAZrA96upHafxfSmeiI&term=';
+  private url = 'https://api.sandbox.amadeus.com/v1.2/airports/autocomplete?apikey=APIKEY&term=Ord';
+  private flightUrl = 'https://api.sandbox.amadeus.com/v1.2/flights/low-fare-search?apikey=APIKEY&origin=';
+  private autocompleteUrl = 'https://api.sandbox.amadeus.com/v1.2/airports/autocomplete?apikey=APIKEY&term=';
   @Input() flightdetails = {numberOfPeople: '', departure: '', destination: '', departureDate: '', returnDate: '' };
 
   posts: any[];
